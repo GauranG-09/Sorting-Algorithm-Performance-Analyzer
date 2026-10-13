@@ -209,7 +209,7 @@ void runSelection(void) {
     displayArray(selectionResult, n);
     printf("Comparisons: %lld\n", stats.comparisons);
     printf("Swaps:      %lld\n", stats.operations);
-    printf("Time:       %.3f ms\n", stats.elapsedMs);
+    printf("Time:       %.5f ms\n", stats.elapsedMs);
     printf("Sorted correctly: %s\n", isSorted(selectionResult, n) ? "YES" : "NO");
 }
 
@@ -229,7 +229,7 @@ void runInsertion(void) {
     displayArray(insertionResult, n);
     printf("Comparisons: %lld\n", stats.comparisons);
     printf("Shifts:      %lld\n", stats.operations);
-    printf("Time:        %.3f ms\n", stats.elapsedMs);
+    printf("Time:        %.5f ms\n", stats.elapsedMs);
     printf("Sorted correctly: %s\n", isSorted(insertionResult, n) ? "YES" : "NO");
 }
 
